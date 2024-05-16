@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+<<<<<<< HEAD
 		EB95FCEF2BF4EE9600FBDFBF /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB95FCEE2BF4EE9600FBDFBF /* GameView.swift */; };
 		EB95FCF22BF4F00200FBDFBF /* JobsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB95FCF12BF4F00200FBDFBF /* JobsModel.swift */; };
+=======
 		729A30A62BF3F49A0081DF9D /* TelaInicialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729A30A52BF3F49A0081DF9D /* TelaInicialView.swift */; };
+>>>>>>> main
 		EBE33A6A2BF2AA2E00419E88 /* Challenge3App.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE33A692BF2AA2E00419E88 /* Challenge3App.swift */; };
 		EBE33A6C2BF2AA2E00419E88 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE33A6B2BF2AA2E00419E88 /* ContentView.swift */; };
 		EBE33A6E2BF2AA2F00419E88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBE33A6D2BF2AA2F00419E88 /* Assets.xcassets */; };
@@ -17,9 +20,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+<<<<<<< HEAD
 		EB95FCEE2BF4EE9600FBDFBF /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		EB95FCF12BF4F00200FBDFBF /* JobsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobsModel.swift; sourceTree = "<group>"; };
+=======
 		729A30A52BF3F49A0081DF9D /* TelaInicialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaInicialView.swift; sourceTree = "<group>"; };
+>>>>>>> main
 		EBE33A662BF2AA2E00419E88 /* Challenge3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Challenge3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBE33A692BF2AA2E00419E88 /* Challenge3App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge3App.swift; sourceTree = "<group>"; };
 		EBE33A6B2BF2AA2E00419E88 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -39,6 +45,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+<<<<<<< HEAD
 		EB95FCED2BF4EDCC00FBDFBF /* GameFolder */ = {
 			isa = PBXGroup;
 			children = (
@@ -53,14 +60,14 @@
 				EB95FCF12BF4F00200FBDFBF /* JobsModel.swift */,
 			);
 			path = Jobs;
-			sourceTree = "<group>";
-		};
+=======
 		729A30A42BF3F46D0081DF9D /* TelaInicial */ = {
 			isa = PBXGroup;
 			children = (
 				729A30A52BF3F49A0081DF9D /* TelaInicialView.swift */,
 			);
 			path = TelaInicial;
+>>>>>>> main
 			sourceTree = "<group>";
 		};
 		EBE33A5D2BF2AA2E00419E88 = {
@@ -82,9 +89,12 @@
 		EBE33A682BF2AA2E00419E88 /* Challenge3 */ = {
 			isa = PBXGroup;
 			children = (
+<<<<<<< HEAD
 				EB95FCF02BF4EFB400FBDFBF /* Jobs */,
 				EB95FCED2BF4EDCC00FBDFBF /* GameFolder */,
+=======
 				729A30A42BF3F46D0081DF9D /* TelaInicial */,
+>>>>>>> main
 				EBE33A692BF2AA2E00419E88 /* Challenge3App.swift */,
 				EBE33A6B2BF2AA2E00419E88 /* ContentView.swift */,
 				EBE33A6D2BF2AA2F00419E88 /* Assets.xcassets */,
