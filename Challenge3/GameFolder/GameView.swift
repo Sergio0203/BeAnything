@@ -8,70 +8,59 @@
 import SwiftUI
 
 struct GameView: View {
-    let jobs = DataBase.listJobs    
+    let jobs = DataBase.listJobs.shuffled()
+    @State var backDegree = 0.0
+    @State var frontDegree = -90.0
+    @State var index: Int = 0
+    @State var swiped = false
+    @State var isFlipped = false
     
     var body: some View {
+        
         GeometryReader { screen in
             ZStack {
                 VStack {
                     HStack {
-                        Text("A")
+                        
                         Spacer()
+                        Text("A")
                         Text("B")
                         Text("C")
                         
                     }.frame(alignment: .top)
                         .background(Color.blue)
-                    
+        
                     Spacer()
                     
-                    HStack(spacing: 150) {
-                        
-                        RoundedRectangle(cornerRadius: 32)
-                            .stroke(Color.black, lineWidth: 5)
-                            .frame(width: screen.size.width/3, height:screen.size.height/1.5
-                            )
-                        
-                        
-                        VStack {
-                            
-                            Text(jobs[0].name)
-                                .padding(.top, 20)
-                                .font(.custom(
-                                    "AmericanTypeWriter",
-                                    size: 40,
-                                    relativeTo: .largeTitle).bold())
-                            Text(jobs[0].story)
-                                .padding(.init(top: 0, leading: 60, bottom: 0, trailing: 60))
-                                .multilineTextAlignment(.center)
-                                .font(.custom(
-                                    "AmericanTypeWriter",
-                                    size: 28,
-                                    relativeTo: .largeTitle))
-                            
-                        }.frame(width: screen.size.width/3, height:screen.size.height/1.5, alignment: .top)
-                            .border(.black)
-                    }.frame(alignment: .center)
+                    JobsView(job: jobs[index], backDegree: $backDegree, frontDegree: $frontDegree, isFlipped: $isFlipped, width: screen.size.width/3, height:screen.size.height/1.5).frame(alignment: .center)
+                    
                     
                     Spacer()
                 }
                 .frame(width: screen.size.width, height:screen.size.height, alignment: .top)
-                
-                
-            }.background(Color.white)
-                .gesture(DragGesture(minimumDistance: 0, coordinateSpace: .local)
-                    .onEnded { value in
-                        let horizontalAmount = value.translation.width
-                        let verticalAmount = value.translation.height
-                        
-                        if abs(horizontalAmount) > abs(verticalAmount) {
-                            print(horizontalAmount < 0 ? "left swipe" : "right swipe")
-                        } else {
-                            print(verticalAmount < 0 ? "up swipe" : "down swipe")
+            }
+            
+            .background(Color.white)
+            .gesture(DragGesture(minimumDistance: 20, coordinateSpace: .local)
+                .onEnded { value in
+                    let horizontalAmount = value.translation.width
+                    let verticalAmount = value.translation.height
+                    
+                    if abs(horizontalAmount) > abs(verticalAmount) {
+                        if horizontalAmount < 0 && index > 0 {
+                            index -= 1
+                            
                         }
-                    })
+                        else if horizontalAmount > 0 && index < jobs.count - 1 {
+                            index += 1
+                        }
+                        backDegree = 0.0
+                        frontDegree = -90.0
+                        isFlipped = false
+                    }
+                })
         }
-        .ignoresSafeArea()
+        //.ignoresSafeArea()
         
     }
 }

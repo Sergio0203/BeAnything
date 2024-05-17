@@ -10,9 +10,8 @@
 		729A30A62BF3F49A0081DF9D /* TelaInicialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729A30A52BF3F49A0081DF9D /* TelaInicialView.swift */; };
 		EB95FCEF2BF4EE9600FBDFBF /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB95FCEE2BF4EE9600FBDFBF /* GameView.swift */; };
 		EB95FCF22BF4F00200FBDFBF /* JobsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB95FCF12BF4F00200FBDFBF /* JobsModel.swift */; };
-		729A30A62BF3F49A0081DF9D /* TelaInicialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729A30A52BF3F49A0081DF9D /* TelaInicialView.swift */; };
+		EB95FCF42BF688B000FBDFBF /* JobsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB95FCF32BF688B000FBDFBF /* JobsView.swift */; };
 		EBE33A6A2BF2AA2E00419E88 /* Challenge3App.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE33A692BF2AA2E00419E88 /* Challenge3App.swift */; };
-		EBE33A6C2BF2AA2E00419E88 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE33A6B2BF2AA2E00419E88 /* ContentView.swift */; };
 		EBE33A6E2BF2AA2F00419E88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBE33A6D2BF2AA2F00419E88 /* Assets.xcassets */; };
 		EBE33A722BF2AA2F00419E88 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBE33A712BF2AA2F00419E88 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -21,10 +20,9 @@
 		729A30A52BF3F49A0081DF9D /* TelaInicialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaInicialView.swift; sourceTree = "<group>"; };
 		EB95FCEE2BF4EE9600FBDFBF /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		EB95FCF12BF4F00200FBDFBF /* JobsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobsModel.swift; sourceTree = "<group>"; };
-		729A30A52BF3F49A0081DF9D /* TelaInicialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaInicialView.swift; sourceTree = "<group>"; };
+		EB95FCF32BF688B000FBDFBF /* JobsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobsView.swift; sourceTree = "<group>"; };
 		EBE33A662BF2AA2E00419E88 /* Challenge3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Challenge3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBE33A692BF2AA2E00419E88 /* Challenge3App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge3App.swift; sourceTree = "<group>"; };
-		EBE33A6B2BF2AA2E00419E88 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EBE33A6D2BF2AA2F00419E88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EBE33A6F2BF2AA2F00419E88 /* Challenge3.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Challenge3.entitlements; sourceTree = "<group>"; };
 		EBE33A712BF2AA2F00419E88 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -61,16 +59,9 @@
 			isa = PBXGroup;
 			children = (
 				EB95FCF12BF4F00200FBDFBF /* JobsModel.swift */,
+				EB95FCF32BF688B000FBDFBF /* JobsView.swift */,
 			);
 			path = Jobs;
-			sourceTree = "<group>";
-		};
-		729A30A42BF3F46D0081DF9D /* TelaInicial */ = {
-			isa = PBXGroup;
-			children = (
-				729A30A52BF3F49A0081DF9D /* TelaInicialView.swift */,
-			);
-			path = TelaInicial;
 			sourceTree = "<group>";
 		};
 		EBE33A5D2BF2AA2E00419E88 = {
@@ -96,7 +87,6 @@
 				EB95FCED2BF4EDCC00FBDFBF /* GameFolder */,
 				729A30A42BF3F46D0081DF9D /* TelaInicial */,
 				EBE33A692BF2AA2E00419E88 /* Challenge3App.swift */,
-				EBE33A6B2BF2AA2E00419E88 /* ContentView.swift */,
 				EBE33A6D2BF2AA2F00419E88 /* Assets.xcassets */,
 				EBE33A6F2BF2AA2F00419E88 /* Challenge3.entitlements */,
 				EBE33A702BF2AA2F00419E88 /* Preview Content */,
@@ -183,7 +173,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				729A30A62BF3F49A0081DF9D /* TelaInicialView.swift in Sources */,
-				EBE33A6C2BF2AA2E00419E88 /* ContentView.swift in Sources */,
+				EB95FCF42BF688B000FBDFBF /* JobsView.swift in Sources */,
 				EB95FCF22BF4F00200FBDFBF /* JobsModel.swift in Sources */,
 				EB95FCEF2BF4EE9600FBDFBF /* GameView.swift in Sources */,
 				EBE33A6A2BF2AA2E00419E88 /* Challenge3App.swift in Sources */,
@@ -326,7 +316,8 @@
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
-				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = NO;
+				INFOPLIST_KEY_UIStatusBarHidden = NO;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
@@ -366,7 +357,8 @@
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
-				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = NO;
+				INFOPLIST_KEY_UIStatusBarHidden = NO;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";

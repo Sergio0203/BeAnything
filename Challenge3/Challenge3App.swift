@@ -11,7 +11,7 @@ import SwiftUI
 struct Challenge3App: App {
     var body: some Scene {
         WindowGroup {
-            GameView()
+            GameView()//.statusBar(hidden: true)
         }
     }
 }
