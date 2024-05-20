@@ -11,8 +11,8 @@ import SwiftUI
 
 struct DataBase {
     static var listJobs: [JobsModel] = [
-        JobsModel(image: Image(systemName: "trash.square.fill"), story: "Agora vc é um lixeiro", name: "Lixeiro", description: ["Vc corre atrás do caminhao", "Vc é foda"]),
-        JobsModel(image: Image(systemName: "square.and.arrow.down.fill"), story: "Essa é uma historia sobre o teste 2", name: "Teste", description: ["Vc é usado para testar", "Vc valida"]),
+        JobsModel(image: Image(systemName: "trash.square.fill"), story: "Senhora Presidente, os alunos de várias escolas estão sem livros. O que você gostaria de fazer para garantir que todos tenham os livros de que precisam?", name: "A presidente", description: ["A presidente é a chefe de um país", "Ela ajuda as pessoas do país", "Ela fala em nome do país em eventos importantes"]),
+        JobsModel(image: Image(systemName: "square.and.arrow.down.fill"), story: "Essa é uma historia sobre o teste 2", name: "teste", description: ["Vc é usado para testar", "Vc valida"]),
         JobsModel(image: Image(systemName: "pencil"), story: "Agora vc é um lapis", name: "Lapis", description: ["Voce é Grande", "Voce escreve"])
 
 
