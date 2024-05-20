@@ -1,0 +1,29 @@
+import Foundation
+import SwiftUI
+import AVFoundation
+
+var audioPlayer : AVAudioPlayer?
+
+func playMusic() {
+    let resourcePath = Bundle.main.url(forResource: "musicas", withExtension: "mp3")
+    
+    do {
+        audioPlayer = try AVAudioPlayer(contentsOf: resourcePath!)
+        audioPlayer?.play()
+        
+    } catch {
+        print(error.localizedDescription)
+    }
+}
+
+func pauseMusic(){
+    if let player = audioPlayer {
+        player.pause()
+    }
+}
+
+func stopMusic() {
+    if let player = audioPlayer {
+        player.stop()
+    }
+}
