@@ -3,15 +3,21 @@ import SwiftUI
 struct TelaInicialView: View {
     var body: some View {
         ZStack{
-            Button(action: pauseMusic, label: {
-               Text("PAUSE")
-            })
+            Image(.backgroundRoxo1)
+                .resizable()
+            
+            VStack{
+                Button(action: pauseMusic, label: {
+                    Text("PAUSE")
+                })
+            }
         }.onAppear{
-            playMusic()
+            //playMusic()
         }
         .onDisappear{
             stopMusic()
         }
+        .ignoresSafeArea()
     }
 }
 
