@@ -16,6 +16,7 @@ struct JobsView: View {
     @Binding var backDegree: Double
     @Binding var frontDegree: Double
     @Binding var isFlipped: Bool
+    @State private var dragAmount = CGSize.zero
 
     let width : CGFloat
     let height : CGFloat
@@ -50,12 +51,12 @@ struct JobsView: View {
             ZStack {
                 CardFront(width: width, height: height, imageJob: job.image, degree: $backDegree)
                 CardBack(width: width, height: height, jobDescription: job.description , degree: $frontDegree)
-            }.onTapGesture {
+            }
+            .onTapGesture {
                 flipCard()
             }
             StoryView(story: job.story, name: job.name, width: width, height: height)
         }
-
     }
 }
 
