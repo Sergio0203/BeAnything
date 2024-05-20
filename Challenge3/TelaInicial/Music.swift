@@ -4,18 +4,18 @@ import AVFoundation
 
 var audioPlayer : AVAudioPlayer?
 
-struct Music : View {
-    
-    var image = Image(.btTocando)
-    
-    var body: some View {
-        VStack{
-            Button(action: pauseMusic, label: {
-                Image(.btPausado)
-            })
-        }
-    }
-}
+//struct Music : View {
+//    
+//    var image = Image(.btTocando)
+//    
+//    var body: some View {
+//        VStack{
+//            Button(action: pauseMusic, label: {
+//                Image(.btPausado)
+//            })
+//        }
+//    }
+//}
 
 func playMusic() {
     let resourcePath = Bundle.main.url(forResource: "musicas", withExtension: "mp3")
