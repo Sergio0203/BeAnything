@@ -11,9 +11,9 @@ struct GameView: View {
     let jobs = DataBase.listJobs.shuffled()
     @State private var currentIndex = 0
     @State var dragOffSet: CGFloat = 0
-    @State var backDegree: Double = 0
-    @State var frontDegree: Double = -90
-    @State var isFlipped = false
+//    @State var backDegree: Double = 0
+//    @State var frontDegree: Double = -90
+//    @State var isFlipped = false
     @State private var dragAmount = CGSize.zero
     @State var viewOpacity: Double = 1
     @State var distanceFromMid: CGSize = CGSize(width: 0, height: 0)
@@ -40,7 +40,8 @@ struct GameView: View {
 //                        .onAppear(perform: {
 //                            print(jobs)
 //                        })
-                    CarouselOfJobs(currentIndex: $currentIndex, backDegree: $backDegree, frontDegree: $frontDegree, isFlipped: $isFlipped, dragOffSet: $dragOffSet, width: screen.size.width * 0.35, height:screen.size.height * 0.6).frame(alignment: .center)
+//                    CarouselOfJobs(currentIndex: $currentIndex, backDegree: $backDegree, frontDegree: $frontDegree, isFlipped: $isFlipped, dragOffSet: $dragOffSet, width: screen.size.width * 0.35, height:screen.size.height * 0.6).frame(alignment: .center)
+                    CarouselOfJobs(currentIndex: currentIndex, dragOffSet: dragOffSet, width: screen.size.width * 0.35, height:screen.size.height * 0.6).frame(alignment: .center)
                     Spacer()
                 }
                 .frame(width: screen.size.width, height:screen.size.height, alignment: .top)
@@ -61,17 +62,17 @@ struct GameView: View {
                     let threshold: CGFloat = 50
 
                     if value.translation.width > threshold {
-                        backDegree = 0.0
-                        frontDegree = -90.0
-                        isFlipped = false
+//                        backDegree = 0.0
+//                        frontDegree = -90.0
+//                        isFlipped = false
                         withAnimation {
                             currentIndex = max(0, currentIndex - 1)
                         }
                         
                     }else if value.translation.width < -threshold {
-                        backDegree = 0.0
-                        frontDegree = -90.0
-                        isFlipped = false
+//                        backDegree = 0.0
+//                        frontDegree = -90.0
+//                        isFlipped = false
                         withAnimation {
                             currentIndex = min(jobs.count - 1, currentIndex + 1)
                         }
