@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7249BEEF2BFBE2A200B75A06 /* AudioPlayerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7249BEEE2BFBE2A200B75A06 /* AudioPlayerManager.swift */; };
 		729A30A62BF3F49A0081DF9D /* TelaInicialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729A30A52BF3F49A0081DF9D /* TelaInicialView.swift */; };
 		72EBD3832BFD0AAD008A959A /* btSound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EBD3822BFD0AAD008A959A /* btSound.swift */; };
 		72EBD3852BFD0AB9008A959A /* btMusic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EBD3842BFD0AB9008A959A /* btMusic.swift */; };
 		72EBD3872BFD0ACA008A959A /* btCredits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EBD3862BFD0ACA008A959A /* btCredits.swift */; };
 		72EBD38B2BFD274B008A959A /* CreditsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EBD38A2BFD274B008A959A /* CreditsView.swift */; };
 		72EBD38D2BFD2772008A959A /* musicas.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 72EBD38C2BFD2772008A959A /* musicas.mp3 */; };
+		72EBD38F2BFD30D7008A959A /* AudioPlayerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EBD38E2BFD30D7008A959A /* AudioPlayerManager.swift */; };
 		EB95FCEF2BF4EE9600FBDFBF /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB95FCEE2BF4EE9600FBDFBF /* GameView.swift */; };
 		EB95FCF22BF4F00200FBDFBF /* JobsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB95FCF12BF4F00200FBDFBF /* JobsModel.swift */; };
 		EB95FCF42BF688B000FBDFBF /* JobsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB95FCF32BF688B000FBDFBF /* JobsView.swift */; };
@@ -24,13 +24,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		7249BEEE2BFBE2A200B75A06 /* AudioPlayerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerManager.swift; sourceTree = "<group>"; };
 		729A30A52BF3F49A0081DF9D /* TelaInicialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaInicialView.swift; sourceTree = "<group>"; };
 		72EBD3822BFD0AAD008A959A /* btSound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = btSound.swift; sourceTree = "<group>"; };
 		72EBD3842BFD0AB9008A959A /* btMusic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = btMusic.swift; sourceTree = "<group>"; };
 		72EBD3862BFD0ACA008A959A /* btCredits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = btCredits.swift; sourceTree = "<group>"; };
 		72EBD38A2BFD274B008A959A /* CreditsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditsView.swift; sourceTree = "<group>"; };
 		72EBD38C2BFD2772008A959A /* musicas.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = musicas.mp3; path = ../../../../Downloads/musicas.mp3; sourceTree = "<group>"; };
+		72EBD38E2BFD30D7008A959A /* AudioPlayerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerManager.swift; sourceTree = "<group>"; };
 		EB95FCEE2BF4EE9600FBDFBF /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		EB95FCF12BF4F00200FBDFBF /* JobsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobsModel.swift; sourceTree = "<group>"; };
 		EB95FCF32BF688B000FBDFBF /* JobsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobsView.swift; sourceTree = "<group>"; };
@@ -57,7 +57,6 @@
 			isa = PBXGroup;
 			children = (
 				72EBD38C2BFD2772008A959A /* musicas.mp3 */,
-				7249BEEE2BFBE2A200B75A06 /* AudioPlayerManager.swift */,
 			);
 			path = Sounds;
 			sourceTree = "<group>";
@@ -66,8 +65,8 @@
 			isa = PBXGroup;
 			children = (
 				729A30A52BF3F49A0081DF9D /* TelaInicialView.swift */,
-				7249BEEE2BFBE2A200B75A06 /* Music.swift */,
 				72EBD38A2BFD274B008A959A /* CreditsView.swift */,
+				72EBD38E2BFD30D7008A959A /* AudioPlayerManager.swift */,
 			);
 			path = TelaInicial;
 			sourceTree = "<group>";
@@ -218,8 +217,8 @@
 				72EBD3872BFD0ACA008A959A /* btCredits.swift in Sources */,
 				EB95FCEF2BF4EE9600FBDFBF /* GameView.swift in Sources */,
 				EBDE27402BFCDCBE0031CF7E /* CarouselOfJobs.swift in Sources */,
+				72EBD38F2BFD30D7008A959A /* AudioPlayerManager.swift in Sources */,
 				EBE33A6A2BF2AA2E00419E88 /* Challenge3App.swift in Sources */,
-				7249BEEF2BFBE2A200B75A06 /* AudioPlayerManager.swift in Sources */,
 				72EBD3832BFD0AAD008A959A /* btSound.swift in Sources */,
 				72EBD3852BFD0AB9008A959A /* btMusic.swift in Sources */,
 			);
