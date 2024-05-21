@@ -4,21 +4,9 @@ import AVFoundation
 
 var audioPlayer : AVAudioPlayer?
 
-//struct Music : View {
-//    
-//    var image = Image(.btTocando)
-//    
-//    var body: some View {
-//        VStack{
-//            Button(action: pauseMusic, label: {
-//                Image(.btPausado)
-//            })
-//        }
-//    }
-//}
-
-func playMusic() {
-    let resourcePath = Bundle.main.url(forResource: "musicas", withExtension: "mp3")
+func playSound(sound : String, type: String) {
+    let resourcePath = Bundle.main.url(forResource: sound, withExtension: type)
+    
     
     do {
         audioPlayer = try AVAudioPlayer(contentsOf: resourcePath!)
@@ -29,13 +17,13 @@ func playMusic() {
     }
 }
 
-func pauseMusic(){
+func pauseSound(){
     if let player = audioPlayer {
         player.pause()
     }
 }
 
-func stopMusic() {
+func stopSound() {
     if let player = audioPlayer {
         player.stop()
     }
