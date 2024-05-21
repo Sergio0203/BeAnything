@@ -18,7 +18,7 @@ var audioPlayer : AVAudioPlayer?
 //}
 
 func playMusic() {
-    let resourcePath = Bundle.main.url(forResource: "musicas", withExtension: "mp3")
+    let resourcePath = Bundle.main.url(forResource: "Assets", withExtension: "mp3")
     
     do {
         audioPlayer = try AVAudioPlayer(contentsOf: resourcePath!)

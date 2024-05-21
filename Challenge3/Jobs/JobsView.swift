@@ -17,6 +17,7 @@ struct JobsView: View {
     @Binding var frontDegree: Double
     @Binding var isFlipped: Bool
     @State private var dragAmount = CGSize.zero
+    @State var dragOffSet: CGFloat = 0
 
     let width : CGFloat
     let height : CGFloat
@@ -70,9 +71,10 @@ struct CardBack : View {
         
         ZStack {
             RoundedRectangle(cornerRadius: 20)
-                .fill(.white)
+                .fill(.cardBackground)
+                .strokeBorder(.cardsColorStroke, lineWidth: 10)
                 .frame(width: width, height: height)
-                .shadow(color: .gray, radius: 2, x: 0, y: 0)
+//                .shadow(color: .gray, radius: 2, x: 0, y: 0)
             VStack{
                 Text(jobDescription[0])
                 Text(jobDescription[1])
@@ -90,15 +92,15 @@ struct CardFront : View {
     
     var body: some View {
         ZStack {
-            RoundedRectangle(cornerRadius: 20)
-                .stroke(.blue.opacity(0.7), lineWidth: 3)
+            RoundedRectangle(cornerRadius: 30)
+                .fill(.cardBackground)
+                .strokeBorder(.cardsColorStroke, lineWidth: 10)
                 .frame(width: width, height: height)
-                .background(.white)
             
             imageJob
                 .resizable()
-                .frame(width: 150, height: 150)
                 .foregroundColor(.blue.opacity(0.7))
+                .frame(width: width*0.79, height: height*0.78)
             
         }.rotation3DEffect(Angle(degrees: degree), axis: (x: 0, y: 1, z: 0))
         
