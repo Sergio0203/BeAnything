@@ -17,6 +17,7 @@
 		EB95FCEF2BF4EE9600FBDFBF /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB95FCEE2BF4EE9600FBDFBF /* GameView.swift */; };
 		EB95FCF22BF4F00200FBDFBF /* JobsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB95FCF12BF4F00200FBDFBF /* JobsModel.swift */; };
 		EB95FCF42BF688B000FBDFBF /* JobsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB95FCF32BF688B000FBDFBF /* JobsView.swift */; };
+		EBDE27402BFCDCBE0031CF7E /* CarouselOfJobs.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDE273F2BFCDCBE0031CF7E /* CarouselOfJobs.swift */; };
 		EBE33A6A2BF2AA2E00419E88 /* Challenge3App.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE33A692BF2AA2E00419E88 /* Challenge3App.swift */; };
 		EBE33A6E2BF2AA2F00419E88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBE33A6D2BF2AA2F00419E88 /* Assets.xcassets */; };
 		EBE33A722BF2AA2F00419E88 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBE33A712BF2AA2F00419E88 /* Preview Assets.xcassets */; };
@@ -33,6 +34,7 @@
 		EB95FCEE2BF4EE9600FBDFBF /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		EB95FCF12BF4F00200FBDFBF /* JobsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobsModel.swift; sourceTree = "<group>"; };
 		EB95FCF32BF688B000FBDFBF /* JobsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobsView.swift; sourceTree = "<group>"; };
+		EBDE273F2BFCDCBE0031CF7E /* CarouselOfJobs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselOfJobs.swift; sourceTree = "<group>"; };
 		EBE33A662BF2AA2E00419E88 /* Challenge3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Challenge3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBE33A692BF2AA2E00419E88 /* Challenge3App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge3App.swift; sourceTree = "<group>"; };
 		EBE33A6D2BF2AA2F00419E88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				729A30A52BF3F49A0081DF9D /* TelaInicialView.swift */,
+				7249BEEE2BFBE2A200B75A06 /* Music.swift */,
 				72EBD38A2BFD274B008A959A /* CreditsView.swift */,
 			);
 			path = TelaInicial;
@@ -83,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				EB95FCEE2BF4EE9600FBDFBF /* GameView.swift */,
+				EBDE273F2BFCDCBE0031CF7E /* CarouselOfJobs.swift */,
 			);
 			path = GameFolder;
 			sourceTree = "<group>";
@@ -213,6 +217,7 @@
 				72EBD38B2BFD274B008A959A /* CreditsView.swift in Sources */,
 				72EBD3872BFD0ACA008A959A /* btCredits.swift in Sources */,
 				EB95FCEF2BF4EE9600FBDFBF /* GameView.swift in Sources */,
+				EBDE27402BFCDCBE0031CF7E /* CarouselOfJobs.swift in Sources */,
 				EBE33A6A2BF2AA2E00419E88 /* Challenge3App.swift in Sources */,
 				7249BEEF2BFBE2A200B75A06 /* AudioPlayerManager.swift in Sources */,
 				72EBD3832BFD0AAD008A959A /* btSound.swift in Sources */,
