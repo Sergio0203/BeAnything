@@ -5,17 +5,22 @@ struct TelaInicialView: View {
         ZStack{
             Image(.backgroundRoxo1)
                 .resizable()
-            
             VStack{
-                Button(action: pauseMusic, label: {
-                    Text("PAUSE")
-                })
+                
+                HStack{
+                    Spacer()
+                    btMusic()
+                    btSound()
+                    btCredits()
+                }
+                
+                Spacer()
             }
         }.onAppear{
-            //playMusic()
+            //playSound(sound: "musicas", type: "mp3")
         }
         .onDisappear{
-            stopMusic()
+            stopSound()
         }
         .ignoresSafeArea()
     }
