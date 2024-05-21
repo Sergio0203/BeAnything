@@ -64,6 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				EB95FCEE2BF4EE9600FBDFBF /* GameView.swift */,
+				729A30A42BF3F46D0081DF9D /* TelaInicial */,
 				EBDE273F2BFCDCBE0031CF7E /* CarouselOfJobs.swift */,
 			);
 			path = GameFolder;
@@ -99,7 +100,6 @@
 			children = (
 				EB95FCF02BF4EFB400FBDFBF /* Jobs */,
 				EB95FCED2BF4EDCC00FBDFBF /* GameFolder */,
-				729A30A42BF3F46D0081DF9D /* TelaInicial */,
 				EBE33A692BF2AA2E00419E88 /* Challenge3App.swift */,
 				EBE33A6D2BF2AA2F00419E88 /* Assets.xcassets */,
 				EBE33A6F2BF2AA2F00419E88 /* Challenge3.entitlements */,
