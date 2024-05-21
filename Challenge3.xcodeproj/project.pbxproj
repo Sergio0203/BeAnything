@@ -85,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				EB95FCEE2BF4EE9600FBDFBF /* GameView.swift */,
+				729A30A42BF3F46D0081DF9D /* TelaInicial */,
 				EBDE273F2BFCDCBE0031CF7E /* CarouselOfJobs.swift */,
 			);
 			path = GameFolder;

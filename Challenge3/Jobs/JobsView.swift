@@ -73,10 +73,19 @@ struct CardBack : View {
                 .strokeBorder(.cardsColorStroke, lineWidth: 10)
                 .frame(width: width, height: height)
 //                .shadow(color: .gray, radius: 2, x: 0, y: 0)
-            VStack{
-                Text(jobDescription[0])
-                Text(jobDescription[1])
-            }
+            VStack(){
+                Spacer()
+                ForEach(0..<jobDescription.count, id: \.self) { index in
+                    Text(jobDescription[index])
+                        .padding(.init(top: 0, leading: 60, bottom: 30, trailing: 60))
+                        .multilineTextAlignment(.center)
+                        .font(.custom(
+                            "AmericanTypeWriter",
+                            size: 28,
+                            relativeTo: .largeTitle))
+                }
+                Spacer()
+            }.frame(width: width, height: height, alignment: .top)
             
         }.rotation3DEffect(Angle(degrees: degree), axis: (x: 0, y: 1, z: 0))
     }
@@ -125,7 +134,7 @@ struct StoryView : View {
                 .font(.custom(
                     "AmericanTypeWriter",
                     size: 28,
-                    relativeTo: .largeTitle))
+                    relativeTo: .caption))
             
         }.frame(width: width, height: height, alignment: .top)
     }
