@@ -81,7 +81,7 @@ struct CardBack : View {
                         .multilineTextAlignment(.center)
                         .font(.custom(
                             "AmericanTypeWriter",
-                            size: 28,
+                            size: 20,
                             relativeTo: .largeTitle))
                 }
                 Spacer()
@@ -133,7 +133,7 @@ struct StoryView : View {
                 .multilineTextAlignment(.center)
                 .font(.custom(
                     "AmericanTypeWriter",
-                    size: 28,
+                    size: 22,
                     relativeTo: .caption))
             
         }.frame(width: width, height: height, alignment: .top)

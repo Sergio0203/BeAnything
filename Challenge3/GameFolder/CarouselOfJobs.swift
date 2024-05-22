@@ -10,33 +10,30 @@ import SwiftUI
 
 struct CarouselOfJobs: View {
     var currentIndex: Int
-//    @Binding var backDegree: Double
-//    @Binding var frontDegree: Double
-//    @Binding var isFlipped: Bool
+    //    @Binding var backDegree: Double
+    //    @Binding var frontDegree: DoubleS
+    //    @Binding var isFlipped: Bool
     var dragOffSet: CGFloat
     
     let width: CGFloat
     let height: CGFloat
-    let jobs = DataBase.listJobs.shuffled()
+    let jobs = DataBase.listJobs
     var body: some View {
             VStack{
                 ZStack{
-                    Image(.backgroundRoxo1).opacity(0)
                     ForEach(0..<jobs.count, id: \.self) { index in
-//                        JobsView(job: jobs[index], backDegree: $backDegree, frontDegree: $frontDegree, isFlipped: $isFlipped, isCurrentIndex: currentIndex == index, width: width, height: height).frame(alignment: .center)
                         JobsView(job: jobs[index], isCurrentIndex: currentIndex == index, width: width, height: height)
                             .opacity(currentIndex == index ? 1.0 : 1)
                             .scaleEffect(currentIndex == index ? 1 : 0.8)
-                            .offset(x:CGFloat(index - currentIndex) * ((2 * width) + 150) + dragOffSet, y: 0)
-
+                            .offset(x:CGFloat(index - currentIndex) * ((2 * width) + width/3.5) + dragOffSet, y: 0)
                     }
                 }
-                
             }
+        
         
     }
 }
 
 //#Preview {
-//    CarouselOfJobs()
+//    CarouselOfJobs(currentIndex: 0, dragOffSet: 0.0, width: 100, height: 200)
 //}
