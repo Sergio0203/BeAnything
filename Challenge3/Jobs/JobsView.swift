@@ -120,22 +120,31 @@ struct StoryView : View {
     let width : CGFloat
     let height : CGFloat
     var body: some View {
-        VStack {
-            
-            Text(name)
-                .padding(.top, 20)
-                .font(.custom(
-                    "AmericanTypeWriter",
-                    size: 40,
-                    relativeTo: .largeTitle).bold())
-            Text(story)
-                .padding(.init(top: 0, leading: 60, bottom: 0, trailing: 60))
-                .multilineTextAlignment(.center)
-                .font(.custom(
-                    "AmericanTypeWriter",
-                    size: 22,
-                    relativeTo: .caption))
-            
-        }.frame(width: width, height: height, alignment: .top)
+        ZStack{
+            RoundedRectangle(cornerRadius: 30)
+                .fill(.cardBackground)
+                .strokeBorder(.cardsColorStroke, lineWidth: 10)
+                .frame(width: width, height: height)
+            VStack {
+                
+                Text(name)
+                    .padding(.top, 20)
+                    .font(.custom(
+                        "AmericanTypeWriter",
+                        size: 40,
+                        relativeTo: .largeTitle).bold())
+                Spacer()
+                Text(story)
+                    .padding(.init(top: 0, leading: 60, bottom: 0, trailing: 60))
+                    .multilineTextAlignment(.center)
+                    .font(.custom(
+                        "AmericanTypeWriter",
+                        size: 22,
+                        relativeTo: .caption))
+                Spacer()
+                    
+                
+            }.frame(width: width, height: height, alignment: .top)
+        }
     }
 }

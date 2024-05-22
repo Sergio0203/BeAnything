@@ -11,28 +11,22 @@ struct btMusic : View{
     
     var body: some View{
         HStack{
-            if isPlayingMusic{
-                Button(action: stopBtMusic, label: {
-                    Image(image[0])
-                        .resizable()
-                        .frame(width: 50, height: 50)
-                        .padding(2.5)
-                })
-            } else{
-                Button(action: playBtMusic, label:{
-                    Image(image[1])
-                        .resizable()
-                        .frame(width: 50, height: 50)
-                        .padding(2.5)
-                })
-            }
+            Button(action: isPlayingMusic ? stopBtMusic : playBtMusic, label: {
+                Image(isPlayingMusic ? image[0] : image[1])
+                    .resizable()
+                    .frame(width: 50, height: 50)
+                    .padding(2.5)
+            })
         }.padding(5)
+            .onAppear(perform: {
+                playBtMusic()
+            })
     }
     func playBtMusic(){
-        playSound(sound: "musicas", type: "mp3")
+        playSound(sound: "musica", type: "mp3")
         isPlayingMusic = true
     }
-
+    
     func stopBtMusic(){
         stopSound()
         isPlayingMusic = false

@@ -20,15 +20,14 @@ struct GameView: View {
             ZStack {
                 Image(.backgroundAmarelo).resizable()
                 VStack{
-//                    HStack {
-//                        
-//                        Spacer()
-//                        Text("A")
-//                        Text("B")
-//                        Text("C")
-//                        
-//                    }.frame(alignment: .top)
-//                        .background(Color.blue)
+                    HStack (spacing: 50) {
+                        
+                        Spacer()
+                        btMusic()
+                        btSound()
+                        btCredits()
+                        
+                    }.padding()
         
                     Spacer()
 
