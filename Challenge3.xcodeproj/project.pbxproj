@@ -13,6 +13,11 @@
 		72EBD3872BFD0ACA008A959A /* btCredits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EBD3862BFD0ACA008A959A /* btCredits.swift */; };
 		72EBD38B2BFD274B008A959A /* CreditsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EBD38A2BFD274B008A959A /* CreditsView.swift */; };
 		72EBD38F2BFD30D7008A959A /* AudioPlayerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EBD38E2BFD30D7008A959A /* AudioPlayerManager.swift */; };
+		EB805E022BFE62C300E4893D /* SF-Pro-Rounded-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = EB805E012BFE62C200E4893D /* SF-Pro-Rounded-Bold.otf */; };
+		EB805E042BFE63A000E4893D /* SF-Pro-Rounded-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = EB805E032BFE63A000E4893D /* SF-Pro-Rounded-Regular.otf */; };
+		EB805E082BFE69A400E4893D /* Sunny Spells Basic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EB805E072BFE69A400E4893D /* Sunny Spells Basic.ttf */; };
+		EB805E0A2BFE897300E4893D /* SF-Pro-Rounded-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = EB805E092BFE897300E4893D /* SF-Pro-Rounded-Medium.otf */; };
+		EB805E0C2BFE8D3E00E4893D /* SF-Pro-Rounded-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = EB805E0B2BFE8D3E00E4893D /* SF-Pro-Rounded-Black.otf */; };
 		EB95FCEF2BF4EE9600FBDFBF /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB95FCEE2BF4EE9600FBDFBF /* GameView.swift */; };
 		EB95FCF22BF4F00200FBDFBF /* JobsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB95FCF12BF4F00200FBDFBF /* JobsModel.swift */; };
 		EB95FCF42BF688B000FBDFBF /* JobsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB95FCF32BF688B000FBDFBF /* JobsView.swift */; };
@@ -30,6 +35,12 @@
 		72EBD3862BFD0ACA008A959A /* btCredits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = btCredits.swift; sourceTree = "<group>"; };
 		72EBD38A2BFD274B008A959A /* CreditsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditsView.swift; sourceTree = "<group>"; };
 		72EBD38E2BFD30D7008A959A /* AudioPlayerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerManager.swift; sourceTree = "<group>"; };
+		EB805DFE2BFE614400E4893D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		EB805E012BFE62C200E4893D /* SF-Pro-Rounded-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Bold.otf"; sourceTree = "<group>"; };
+		EB805E032BFE63A000E4893D /* SF-Pro-Rounded-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Regular.otf"; sourceTree = "<group>"; };
+		EB805E072BFE69A400E4893D /* Sunny Spells Basic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sunny Spells Basic.ttf"; sourceTree = "<group>"; };
+		EB805E092BFE897300E4893D /* SF-Pro-Rounded-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Medium.otf"; sourceTree = "<group>"; };
+		EB805E0B2BFE8D3E00E4893D /* SF-Pro-Rounded-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Black.otf"; sourceTree = "<group>"; };
 		EB95FCEE2BF4EE9600FBDFBF /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		EB95FCF12BF4F00200FBDFBF /* JobsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobsModel.swift; sourceTree = "<group>"; };
 		EB95FCF32BF688B000FBDFBF /* JobsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobsView.swift; sourceTree = "<group>"; };
@@ -81,6 +92,18 @@
 			path = Buttons;
 			sourceTree = "<group>";
 		};
+		EB805DFB2BFE612300E4893D /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				EB805E0B2BFE8D3E00E4893D /* SF-Pro-Rounded-Black.otf */,
+				EB805E072BFE69A400E4893D /* Sunny Spells Basic.ttf */,
+				EB805E012BFE62C200E4893D /* SF-Pro-Rounded-Bold.otf */,
+				EB805E032BFE63A000E4893D /* SF-Pro-Rounded-Regular.otf */,
+				EB805E092BFE897300E4893D /* SF-Pro-Rounded-Medium.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		EB95FCED2BF4EDCC00FBDFBF /* GameFolder */ = {
 			isa = PBXGroup;
 			children = (
@@ -118,6 +141,8 @@
 		EBE33A682BF2AA2E00419E88 /* Challenge3 */ = {
 			isa = PBXGroup;
 			children = (
+				EB805DFE2BFE614400E4893D /* Info.plist */,
+				EB805DFB2BFE612300E4893D /* Fonts */,
 				EB95FCF02BF4EFB400FBDFBF /* Jobs */,
 				EB95FCED2BF4EDCC00FBDFBF /* GameFolder */,
 				7249BEED2BFBE27F00B75A06 /* Sounds */,
@@ -198,8 +223,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				EBE33A722BF2AA2F00419E88 /* Preview Assets.xcassets in Resources */,
+				EB805E0A2BFE897300E4893D /* SF-Pro-Rounded-Medium.otf in Resources */,
+				EB805E022BFE62C300E4893D /* SF-Pro-Rounded-Bold.otf in Resources */,
 				EBDE27422BFD345E0031CF7E /* musica.mp3 in Resources */,
 				EBE33A6E2BF2AA2F00419E88 /* Assets.xcassets in Resources */,
+				EB805E082BFE69A400E4893D /* Sunny Spells Basic.ttf in Resources */,
+				EB805E0C2BFE8D3E00E4893D /* SF-Pro-Rounded-Black.otf in Resources */,
+				EB805E042BFE63A000E4893D /* SF-Pro-Rounded-Regular.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,6 +384,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Challenge3/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -395,6 +426,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Challenge3/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;

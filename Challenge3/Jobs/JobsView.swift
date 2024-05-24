@@ -8,12 +8,9 @@
 import Foundation
 import SwiftUI
 
-
-
 struct JobsView: View {
-    //MARK: Variables
     let job: JobsModel
-    @State var backDegree: Double = 0
+    @State var backDegree: Double = 0.01
     @State var frontDegree: Double = -90
     @State var isFlipped = false
     var isCurrentIndex: Bool
@@ -25,7 +22,7 @@ struct JobsView: View {
         isFlipped = false
     }
     
-
+    
     func flipCard () {
         isFlipped = !isFlipped
         if isFlipped && isCurrentIndex{
@@ -44,7 +41,6 @@ struct JobsView: View {
             }
         }
     }
-    //MARK: View Body
     var body: some View {
         HStack(spacing: 150){
             ZStack {
@@ -72,21 +68,30 @@ struct CardBack : View {
                 .fill(.cardBackground)
                 .strokeBorder(.cardsColorStroke, lineWidth: 10)
                 .frame(width: width, height: height)
-//                .shadow(color: .gray, radius: 2, x: 0, y: 0)
             VStack(){
-                Spacer()
+                Text("O que ela faz?")
+                    .font(.custom(GameView.fontBold, size: 40, relativeTo: .largeTitle))
+                    .foregroundStyle(.white)
+                    .padding(.top, 30)
+                    .padding(.bottom, 10)
+                    
+                
                 ForEach(0..<jobDescription.count, id: \.self) { index in
-                    Text(jobDescription[index])
-                        .padding(.init(top: 0, leading: 60, bottom: 30, trailing: 60))
-                        .multilineTextAlignment(.center)
-                        .font(.custom(
-                            "AmericanTypeWriter",
-                            size: 20,
-                            relativeTo: .largeTitle))
+                        Text("• "+jobDescription[index] + ";")
+                            .multilineTextAlignment(.leading)
+                            .font(.custom(
+                                GameView.fontRegular,
+                                size: 30,
+                                relativeTo: .caption))
+                            .lineLimit(nil)
+                            .frame(width: width*0.9, alignment: .leading)
+                            .frame(minHeight: height*0.13)
+                            .foregroundStyle(Color.white)
+                            .padding(.bottom, 17)
+                            .fixedSize(horizontal: false, vertical: true)
                 }
                 Spacer()
-            }.frame(width: width, height: height, alignment: .top)
-            
+            }.frame(width: width, height: height, alignment: .center)
         }.rotation3DEffect(Angle(degrees: degree), axis: (x: 0, y: 1, z: 0))
     }
 }
@@ -100,14 +105,14 @@ struct CardFront : View {
     var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 30)
-                .fill(.cardBackground)
+                .fill(.white)
                 .strokeBorder(.cardsColorStroke, lineWidth: 10)
                 .frame(width: width, height: height)
             
             imageJob
                 .resizable()
                 .foregroundColor(.blue.opacity(0.7))
-                .frame(width: width*0.79, height: height*0.78)
+                .frame(width: width * 0.79, height: height * 0.78)
             
         }.rotation3DEffect(Angle(degrees: degree), axis: (x: 0, y: 1, z: 0))
         
@@ -126,24 +131,24 @@ struct StoryView : View {
                 .strokeBorder(.cardsColorStroke, lineWidth: 10)
                 .frame(width: width, height: height)
             VStack {
-                
                 Text(name)
-                    .padding(.top, 20)
+                    .foregroundStyle(.white)
+                    .padding(.top, 30)
+                    .padding(.bottom, 10)
                     .font(.custom(
-                        "AmericanTypeWriter",
-                        size: 40,
-                        relativeTo: .largeTitle).bold())
-                Spacer()
-                Text(story)
-                    .padding(.init(top: 0, leading: 60, bottom: 0, trailing: 60))
-                    .multilineTextAlignment(.center)
-                    .font(.custom(
-                        "AmericanTypeWriter",
-                        size: 22,
-                        relativeTo: .caption))
-                Spacer()
-                    
-                
+                        GameView.fontBold,
+                        size: 40))
+                ScrollView([.vertical], showsIndicators: false){
+                    Text(story)
+                        .foregroundStyle(.white)
+                        .frame(width: width*0.8, alignment: .leading)
+                        .lineLimit(nil)
+                        .multilineTextAlignment(.leading)
+                        .font(.custom(
+                            GameView.fontRegular,
+                            size: 30, relativeTo: .body))
+                        .fixedSize(horizontal: false, vertical: false)
+                }.frame(width: width, height: height*0.7)
             }.frame(width: width, height: height, alignment: .top)
         }
     }

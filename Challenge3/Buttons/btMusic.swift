@@ -19,16 +19,17 @@ struct btMusic : View{
             })
         }.padding(5)
             .onAppear(perform: {
-                playBtMusic()
+                AudioManager.shared.startAudio(sound: "musica", type: "mp3")
             })
     }
+    
     func playBtMusic(){
-        playSound(sound: "musica", type: "mp3")
         isPlayingMusic = true
+        AudioManager.shared.play()
     }
     
     func stopBtMusic(){
-        stopSound()
         isPlayingMusic = false
+        AudioManager.shared.pause()
     }
 }

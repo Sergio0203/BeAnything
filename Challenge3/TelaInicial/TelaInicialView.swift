@@ -19,9 +19,9 @@ struct TelaInicialView: View {
         }.onAppear{
             //playSound(sound: "musicas", type: "mp3")
         }
-        .onDisappear{
-            stopSound()
-        }
+//        .onDisappear{
+//            stopSound()
+//        }
         .ignoresSafeArea()
     }
 }

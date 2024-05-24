@@ -21,12 +21,12 @@ struct btSound : View{
         
     }
     func playbtSounds(){
-        playSound(sound: "musicas", type: "mp3")
+//        AudioController.shared.playSound(sound: "musicas", type: "mp3")
         isPlayingSounds = true
     }
     
     func stopbtSounds(){
-        stopSound()
+//        /*AudiostopSound*/()
         isPlayingSounds = false
     }
     
