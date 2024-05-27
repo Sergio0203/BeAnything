@@ -45,12 +45,12 @@ struct JobsView: View {
         HStack(spacing: 150){
             ZStack {
                 CardFront(width: width, height: height, imageJob: job.image, degree: $backDegree)
-                CardBack(width: width, height: height, jobDescription: job.description , degree: $frontDegree)
+                CardBack(width: width, height: height, jobDescription: job.description, degree: $frontDegree)
             }
             .onTapGesture {
                 flipCard()
             }
-            StoryView(story: job.story, name: job.name, width: width, height: height)
+            StoryView(story: job.story, name: job.name, audio: job.audioName, width: width, height: height)
         }
     }
 }
@@ -84,7 +84,7 @@ struct CardBack : View {
                                 size: 30,
                                 relativeTo: .caption))
                             .lineLimit(nil)
-                            .frame(width: width*0.9, alignment: .leading)
+                            .frame(width: width*0.8, alignment: .leading)
                             .frame(minHeight: height*0.13)
                             .foregroundStyle(Color.white)
                             .padding(.bottom, 17)
@@ -122,6 +122,7 @@ struct CardFront : View {
 struct StoryView : View {
     let story: String
     let name: String
+    let audio: String
     let width : CGFloat
     let height : CGFloat
     var body: some View {
@@ -137,7 +138,7 @@ struct StoryView : View {
                     .padding(.bottom, 10)
                     .font(.custom(
                         GameView.fontBold,
-                        size: 40))
+                        size: 40, relativeTo: .largeTitle))
                 ScrollView([.vertical], showsIndicators: false){
                     Text(story)
                         .foregroundStyle(.white)
@@ -149,6 +150,10 @@ struct StoryView : View {
                             size: 30, relativeTo: .body))
                         .fixedSize(horizontal: false, vertical: false)
                 }.frame(width: width, height: height*0.7)
+                HStack{
+                    Spacer()
+                    BtNarrator(audioJob: audio).padding(.trailing, 20)
+                }
             }.frame(width: width, height: height, alignment: .top)
         }
     }

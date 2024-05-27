@@ -58,8 +58,6 @@ struct GameView: View {
                             }
                         }
                         dragOffSet = 0
-                        
-                        
                     })
             )
         }

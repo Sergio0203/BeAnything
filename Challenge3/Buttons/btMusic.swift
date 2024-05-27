@@ -4,8 +4,6 @@ import SwiftUI
 struct btMusic : View{
     
     @State var isPlayingMusic = true
-    //state - ao mexer na variavel vai ser executado novamente
-    
     var image : [ImageResource] = [.iconMusic, .iconMusicOff]
     
     
@@ -19,17 +17,23 @@ struct btMusic : View{
             })
         }.padding(5)
             .onAppear(perform: {
-                AudioManager.shared.startAudio(sound: "musica", type: "mp3")
+                AudioManager.shared.startAudio(sound: "themeSong", type: "mp3")
             })
     }
     
     func playBtMusic(){
         isPlayingMusic = true
-        AudioManager.shared.play()
+        AudioManager.shared.setIsButtonActivated(isButtonActivated: false)
+        if !AudioManager.shared.getIsNarrating(){
+            AudioManager.shared.startAudio(sound: "themeSong", type: "mp3")
+        }
     }
     
     func stopBtMusic(){
         isPlayingMusic = false
-        AudioManager.shared.pause()
+        AudioManager.shared.setIsButtonActivated(isButtonActivated: false)
+        if !AudioManager.shared.getIsNarrating(){
+            AudioManager.shared.pause()
+        }
     }
 }

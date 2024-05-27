@@ -13,6 +13,14 @@
 		72EBD3872BFD0ACA008A959A /* btCredits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EBD3862BFD0ACA008A959A /* btCredits.swift */; };
 		72EBD38B2BFD274B008A959A /* CreditsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EBD38A2BFD274B008A959A /* CreditsView.swift */; };
 		72EBD38F2BFD30D7008A959A /* AudioPlayerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EBD38E2BFD30D7008A959A /* AudioPlayerManager.swift */; };
+		EB0A65152C051A50003F0838 /* astronautAudio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EB0A650F2C051A50003F0838 /* astronautAudio.mp3 */; };
+		EB0A65162C051A50003F0838 /* athleteAudio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EB0A65102C051A50003F0838 /* athleteAudio.mp3 */; };
+		EB0A65172C051A50003F0838 /* presidentAudio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EB0A65112C051A50003F0838 /* presidentAudio.mp3 */; };
+		EB0A65182C051A50003F0838 /* tutorialAudio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EB0A65122C051A50003F0838 /* tutorialAudio.mp3 */; };
+		EB0A65192C051A50003F0838 /* scientistAudio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EB0A65132C051A50003F0838 /* scientistAudio.mp3 */; };
+		EB0A651A2C051A50003F0838 /* warriorAudio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EB0A65142C051A50003F0838 /* warriorAudio.mp3 */; };
+		EB7214642C04409200466936 /* themeSong.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EB7214632C04409200466936 /* themeSong.mp3 */; };
+		EB7214662C04447100466936 /* BtNarrator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7214652C04447100466936 /* BtNarrator.swift */; };
 		EB805E022BFE62C300E4893D /* SF-Pro-Rounded-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = EB805E012BFE62C200E4893D /* SF-Pro-Rounded-Bold.otf */; };
 		EB805E042BFE63A000E4893D /* SF-Pro-Rounded-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = EB805E032BFE63A000E4893D /* SF-Pro-Rounded-Regular.otf */; };
 		EB805E082BFE69A400E4893D /* Sunny Spells Basic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EB805E072BFE69A400E4893D /* Sunny Spells Basic.ttf */; };
@@ -22,7 +30,6 @@
 		EB95FCF22BF4F00200FBDFBF /* JobsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB95FCF12BF4F00200FBDFBF /* JobsModel.swift */; };
 		EB95FCF42BF688B000FBDFBF /* JobsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB95FCF32BF688B000FBDFBF /* JobsView.swift */; };
 		EBDE27402BFCDCBE0031CF7E /* CarouselOfJobs.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDE273F2BFCDCBE0031CF7E /* CarouselOfJobs.swift */; };
-		EBDE27422BFD345E0031CF7E /* musica.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EBDE27412BFD345E0031CF7E /* musica.mp3 */; };
 		EBE33A6A2BF2AA2E00419E88 /* Challenge3App.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE33A692BF2AA2E00419E88 /* Challenge3App.swift */; };
 		EBE33A6E2BF2AA2F00419E88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBE33A6D2BF2AA2F00419E88 /* Assets.xcassets */; };
 		EBE33A722BF2AA2F00419E88 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBE33A712BF2AA2F00419E88 /* Preview Assets.xcassets */; };
@@ -35,6 +42,14 @@
 		72EBD3862BFD0ACA008A959A /* btCredits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = btCredits.swift; sourceTree = "<group>"; };
 		72EBD38A2BFD274B008A959A /* CreditsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditsView.swift; sourceTree = "<group>"; };
 		72EBD38E2BFD30D7008A959A /* AudioPlayerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerManager.swift; sourceTree = "<group>"; };
+		EB0A650F2C051A50003F0838 /* astronautAudio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = astronautAudio.mp3; sourceTree = "<group>"; };
+		EB0A65102C051A50003F0838 /* athleteAudio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = athleteAudio.mp3; sourceTree = "<group>"; };
+		EB0A65112C051A50003F0838 /* presidentAudio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = presidentAudio.mp3; sourceTree = "<group>"; };
+		EB0A65122C051A50003F0838 /* tutorialAudio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tutorialAudio.mp3; sourceTree = "<group>"; };
+		EB0A65132C051A50003F0838 /* scientistAudio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = scientistAudio.mp3; sourceTree = "<group>"; };
+		EB0A65142C051A50003F0838 /* warriorAudio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = warriorAudio.mp3; sourceTree = "<group>"; };
+		EB7214632C04409200466936 /* themeSong.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = themeSong.mp3; sourceTree = "<group>"; };
+		EB7214652C04447100466936 /* BtNarrator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BtNarrator.swift; sourceTree = "<group>"; usesTabs = 0; };
 		EB805DFE2BFE614400E4893D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		EB805E012BFE62C200E4893D /* SF-Pro-Rounded-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Bold.otf"; sourceTree = "<group>"; };
 		EB805E032BFE63A000E4893D /* SF-Pro-Rounded-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Rounded-Regular.otf"; sourceTree = "<group>"; };
@@ -45,7 +60,6 @@
 		EB95FCF12BF4F00200FBDFBF /* JobsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobsModel.swift; sourceTree = "<group>"; };
 		EB95FCF32BF688B000FBDFBF /* JobsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobsView.swift; sourceTree = "<group>"; };
 		EBDE273F2BFCDCBE0031CF7E /* CarouselOfJobs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselOfJobs.swift; sourceTree = "<group>"; };
-		EBDE27412BFD345E0031CF7E /* musica.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = musica.mp3; sourceTree = "<group>"; };
 		EBE33A662BF2AA2E00419E88 /* Challenge3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Challenge3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBE33A692BF2AA2E00419E88 /* Challenge3App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge3App.swift; sourceTree = "<group>"; };
 		EBE33A6D2BF2AA2F00419E88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -67,7 +81,13 @@
 		7249BEED2BFBE27F00B75A06 /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
-				EBDE27412BFD345E0031CF7E /* musica.mp3 */,
+				EB0A650F2C051A50003F0838 /* astronautAudio.mp3 */,
+				EB0A65102C051A50003F0838 /* athleteAudio.mp3 */,
+				EB0A65112C051A50003F0838 /* presidentAudio.mp3 */,
+				EB0A65132C051A50003F0838 /* scientistAudio.mp3 */,
+				EB0A65122C051A50003F0838 /* tutorialAudio.mp3 */,
+				EB0A65142C051A50003F0838 /* warriorAudio.mp3 */,
+				EB7214632C04409200466936 /* themeSong.mp3 */,
 			);
 			path = Sounds;
 			sourceTree = "<group>";
@@ -88,6 +108,7 @@
 				72EBD3822BFD0AAD008A959A /* btSound.swift */,
 				72EBD3842BFD0AB9008A959A /* btMusic.swift */,
 				72EBD3862BFD0ACA008A959A /* btCredits.swift */,
+				EB7214652C04447100466936 /* BtNarrator.swift */,
 			);
 			path = Buttons;
 			sourceTree = "<group>";
@@ -225,10 +246,16 @@
 				EBE33A722BF2AA2F00419E88 /* Preview Assets.xcassets in Resources */,
 				EB805E0A2BFE897300E4893D /* SF-Pro-Rounded-Medium.otf in Resources */,
 				EB805E022BFE62C300E4893D /* SF-Pro-Rounded-Bold.otf in Resources */,
-				EBDE27422BFD345E0031CF7E /* musica.mp3 in Resources */,
+				EB7214642C04409200466936 /* themeSong.mp3 in Resources */,
 				EBE33A6E2BF2AA2F00419E88 /* Assets.xcassets in Resources */,
+				EB0A65182C051A50003F0838 /* tutorialAudio.mp3 in Resources */,
+				EB0A65162C051A50003F0838 /* athleteAudio.mp3 in Resources */,
+				EB0A65192C051A50003F0838 /* scientistAudio.mp3 in Resources */,
+				EB0A65172C051A50003F0838 /* presidentAudio.mp3 in Resources */,
 				EB805E082BFE69A400E4893D /* Sunny Spells Basic.ttf in Resources */,
+				EB0A651A2C051A50003F0838 /* warriorAudio.mp3 in Resources */,
 				EB805E0C2BFE8D3E00E4893D /* SF-Pro-Rounded-Black.otf in Resources */,
+				EB0A65152C051A50003F0838 /* astronautAudio.mp3 in Resources */,
 				EB805E042BFE63A000E4893D /* SF-Pro-Rounded-Regular.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -241,6 +268,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				729A30A62BF3F49A0081DF9D /* TelaInicialView.swift in Sources */,
+				EB7214662C04447100466936 /* BtNarrator.swift in Sources */,
 				EB95FCF42BF688B000FBDFBF /* JobsView.swift in Sources */,
 				EB95FCF22BF4F00200FBDFBF /* JobsModel.swift in Sources */,
 				72EBD38B2BFD274B008A959A /* CreditsView.swift in Sources */,

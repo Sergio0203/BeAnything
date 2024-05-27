@@ -1,38 +1,13 @@
 import Foundation
 import AVFoundation
-
-class AudioController{
-    var audioPlayer : AVAudioPlayer?
-    static var shared = AudioController()
-    private init(){
-    }
-    func playSound(sound: String, type: String) {
-        DispatchQueue.main.async{
-            do {
-                guard let resourcePath = Bundle.main.url(forResource: sound, withExtension: type)
-                else { return }
-                self.audioPlayer = try AVAudioPlayer(contentsOf: resourcePath)
-                self.audioPlayer?.play()
-            }catch {
-                print(error.localizedDescription)
-            }
-        }
-    }
-    
-    func stopSound() {
-        if let player = audioPlayer {
-            player.stop()
-        }
-    }
-}
-
 final class AudioManager {
     static let shared = AudioManager()
     
     private var player: AVPlayer?
-    
     private var session = AVAudioSession.sharedInstance()
     
+    private var isButtonActivated = true
+    private var isNarrating = false
     private init() {}
     
     private func activateSession() {
@@ -53,6 +28,15 @@ final class AudioManager {
         } catch _ {}
     }
     
+    func setIsButtonActivated(isButtonActivated: Bool){
+        self.isButtonActivated = isButtonActivated
+    }
+    func getIsNarrating() -> Bool{
+        return isNarrating
+    }
+    func activateNarrating(){
+        isNarrating = true
+    }
     func startAudio(sound: String, type: String) {
         
         activateSession()
@@ -67,11 +51,21 @@ final class AudioManager {
             player = AVPlayer(playerItem: playerItem)
         }
         
+        NotificationCenter.default.addObserver(self, selector: #selector(playerDidFinishPlaying(_:)), name: .AVPlayerItemDidPlayToEndTime, object: playerItem)
+
         if let player = player {
             player.play()
         }
     }
     
+    @objc private func playerDidFinishPlaying(_ notification: Notification) {
+            if let player = player {
+                if isButtonActivated{
+                    startAudio(sound: "themeSong", type: "mp3")
+                }
+                isNarrating = false
+            }
+        }
     func play() {
         if let player = player {
             player.play()
