@@ -153,8 +153,11 @@ struct StoryView : View {
                 HStack{
                     Spacer()
                     BtNarrator(audioJob: audio).padding(.trailing, 20)
+                        .padding(.top, 10)
+                        
                 }
             }.frame(width: width, height: height, alignment: .top)
         }
     }
 }
+

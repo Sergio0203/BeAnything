@@ -59,7 +59,7 @@ final class AudioManager {
     }
     
     @objc private func playerDidFinishPlaying(_ notification: Notification) {
-            if let player = player {
+        if player != nil {
                 if isButtonActivated{
                     startAudio(sound: "themeSong", type: "mp3")
                 }
