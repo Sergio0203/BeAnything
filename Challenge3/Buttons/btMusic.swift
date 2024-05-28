@@ -23,7 +23,7 @@ struct btMusic : View{
     
     func playBtMusic(){
         isPlayingMusic = true
-        AudioManager.shared.setIsButtonActivated(isButtonActivated: false)
+        AudioManager.shared.setIsButtonActivated(isButtonActivated: true)
         if !AudioManager.shared.getIsNarrating(){
             AudioManager.shared.startAudio(sound: "themeSong", type: "mp3")
         }

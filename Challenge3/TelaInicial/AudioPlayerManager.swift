@@ -31,12 +31,15 @@ final class AudioManager {
     func setIsButtonActivated(isButtonActivated: Bool){
         self.isButtonActivated = isButtonActivated
     }
+    
     func getIsNarrating() -> Bool{
         return isNarrating
     }
+    
     func activateNarrating(){
         isNarrating = true
     }
+    
     func startAudio(sound: String, type: String) {
         
         activateSession()
@@ -52,20 +55,21 @@ final class AudioManager {
         }
         
         NotificationCenter.default.addObserver(self, selector: #selector(playerDidFinishPlaying(_:)), name: .AVPlayerItemDidPlayToEndTime, object: playerItem)
-
+        
         if let player = player {
             player.play()
         }
     }
     
     @objc private func playerDidFinishPlaying(_ notification: Notification) {
-            if let player = player {
-                if isButtonActivated{
-                    startAudio(sound: "themeSong", type: "mp3")
-                }
-                isNarrating = false
+        if let player = player {
+            if isButtonActivated{
+                startAudio(sound: "themeSong", type: "mp3")
             }
+            isNarrating = false
         }
+    }
+    
     func play() {
         if let player = player {
             player.play()

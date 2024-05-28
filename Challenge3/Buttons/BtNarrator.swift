@@ -18,10 +18,10 @@ struct BtNarrator : View{
             
         }
     }
+    
     func actionNarrator(){
         AudioManager.shared.activateNarrating()
         AudioManager.shared.startAudio(sound: audioJob, type: "mp3")
-//        AudioManager.shared.play()
     }
 }
 
