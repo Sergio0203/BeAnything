@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		729A30A62BF3F49A0081DF9D /* TelaInicialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729A30A52BF3F49A0081DF9D /* TelaInicialView.swift */; };
+		7235841E2C0599D10074FBDB /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7235841D2C0599D10074FBDB /* MenuView.swift */; };
+		7261794A2C056EED00DE700C /* TutorialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726179492C056EED00DE700C /* TutorialView.swift */; };
+		7294F1B82C05751900707A13 /* AnimationsTutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7294F1B72C05751900707A13 /* AnimationsTutorial.swift */; };
+		7294F1BA2C05792100707A13 /* AnimationsTutorial2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7294F1B92C05792100707A13 /* AnimationsTutorial2.swift */; };
 		72EBD3832BFD0AAD008A959A /* btSound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EBD3822BFD0AAD008A959A /* btSound.swift */; };
 		72EBD3852BFD0AB9008A959A /* btMusic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EBD3842BFD0AB9008A959A /* btMusic.swift */; };
 		72EBD3872BFD0ACA008A959A /* btCredits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EBD3862BFD0ACA008A959A /* btCredits.swift */; };
@@ -36,7 +39,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		729A30A52BF3F49A0081DF9D /* TelaInicialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelaInicialView.swift; sourceTree = "<group>"; };
+		7235841D2C0599D10074FBDB /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		726179492C056EED00DE700C /* TutorialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialView.swift; sourceTree = "<group>"; };
+		7294F1B72C05751900707A13 /* AnimationsTutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationsTutorial.swift; sourceTree = "<group>"; };
+		7294F1B92C05792100707A13 /* AnimationsTutorial2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationsTutorial2.swift; sourceTree = "<group>"; };
 		72EBD3822BFD0AAD008A959A /* btSound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = btSound.swift; sourceTree = "<group>"; };
 		72EBD3842BFD0AB9008A959A /* btMusic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = btMusic.swift; sourceTree = "<group>"; };
 		72EBD3862BFD0ACA008A959A /* btCredits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = btCredits.swift; sourceTree = "<group>"; };
@@ -95,9 +101,12 @@
 		729A30A42BF3F46D0081DF9D /* TelaInicial */ = {
 			isa = PBXGroup;
 			children = (
-				729A30A52BF3F49A0081DF9D /* TelaInicialView.swift */,
 				72EBD38A2BFD274B008A959A /* CreditsView.swift */,
 				72EBD38E2BFD30D7008A959A /* AudioPlayerManager.swift */,
+				726179492C056EED00DE700C /* TutorialView.swift */,
+				7294F1B72C05751900707A13 /* AnimationsTutorial.swift */,
+				7294F1B92C05792100707A13 /* AnimationsTutorial2.swift */,
+				7235841D2C0599D10074FBDB /* MenuView.swift */,
 			);
 			path = TelaInicial;
 			sourceTree = "<group>";
@@ -267,13 +276,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				729A30A62BF3F49A0081DF9D /* TelaInicialView.swift in Sources */,
+				7261794A2C056EED00DE700C /* TutorialView.swift in Sources */,
 				EB7214662C04447100466936 /* BtNarrator.swift in Sources */,
 				EB95FCF42BF688B000FBDFBF /* JobsView.swift in Sources */,
 				EB95FCF22BF4F00200FBDFBF /* JobsModel.swift in Sources */,
 				72EBD38B2BFD274B008A959A /* CreditsView.swift in Sources */,
 				72EBD3872BFD0ACA008A959A /* btCredits.swift in Sources */,
 				EB95FCEF2BF4EE9600FBDFBF /* GameView.swift in Sources */,
+				7294F1BA2C05792100707A13 /* AnimationsTutorial2.swift in Sources */,
+				7235841E2C0599D10074FBDB /* MenuView.swift in Sources */,
+				7294F1B82C05751900707A13 /* AnimationsTutorial.swift in Sources */,
 				EBDE27402BFCDCBE0031CF7E /* CarouselOfJobs.swift in Sources */,
 				72EBD38F2BFD30D7008A959A /* AudioPlayerManager.swift in Sources */,
 				EBE33A6A2BF2AA2E00419E88 /* Challenge3App.swift in Sources */,
@@ -413,6 +425,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Challenge3/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = BeAnything;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -455,6 +468,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Challenge3/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = BeAnything;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;

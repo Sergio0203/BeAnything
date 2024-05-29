@@ -13,6 +13,7 @@ struct JobsView: View {
     @State var backDegree: Double = 0.01
     @State var frontDegree: Double = -90
     @State var isFlipped = false
+    @State var scaleVar: CGFloat = 1
     var isCurrentIndex: Bool
     let width : CGFloat
     let height : CGFloat
@@ -153,8 +154,11 @@ struct StoryView : View {
                 HStack{
                     Spacer()
                     BtNarrator(audioJob: audio).padding(.trailing, 20)
+                        .padding(.top, 10)
+                        
                 }
             }.frame(width: width, height: height, alignment: .top)
         }
     }
 }
+

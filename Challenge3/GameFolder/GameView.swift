@@ -19,6 +19,10 @@ struct GameView: View {
     @State private var dragAmount = CGSize.zero
     @State var viewOpacity: Double = 1
     @State var distanceFromMid: CGSize = CGSize(width: 0, height: 0)
+    
+    var backgroungImage : Image = Image(.backgroundAmarelo).resizable()
+    @State var viewMenu : Bool = false
+    
     var body: some View {
         
         GeometryReader { screen in
@@ -29,8 +33,17 @@ struct GameView: View {
                         
                         Spacer()
                         btMusic()
-                        btSound()
-                        btCredits()
+                       // btSound()
+//                        btCredits()
+                        
+                        //BOTAO SOBRE
+                        Button(action: {
+                            viewMenu.toggle()
+                        }, label: {
+                            Image(.inteon)
+                                .resizable()
+                                .frame(width: 50, height: 50)
+                            })
                         
                     }.padding()
                     
@@ -60,6 +73,10 @@ struct GameView: View {
                         dragOffSet = 0
                     })
             )
+            
+            if viewMenu{
+                MenuView( bgAmarelo: backgroungImage, w: screen.size.width, h: screen.size.height, isToggled: $viewMenu)
+            }
         }
         .ignoresSafeArea()
         

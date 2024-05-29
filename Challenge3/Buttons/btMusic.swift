@@ -4,7 +4,7 @@ import SwiftUI
 struct btMusic : View{
     
     @State var isPlayingMusic = true
-    var image : [ImageResource] = [.iconMusic, .iconMusicOff]
+    var image : [ImageResource] = [.musicon, .musicoff]
     
     
     var body: some View{

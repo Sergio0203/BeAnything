@@ -10,11 +10,8 @@ import SwiftUI
 
 struct CarouselOfJobs: View {
     var currentIndex: Int
-    //    @Binding var backDegree: Double
-    //    @Binding var frontDegree: DoubleS
-    //    @Binding var isFlipped: Bool
     var dragOffSet: CGFloat
-    
+    @State var scaleVar = 1
     let width: CGFloat
     let height: CGFloat
     let jobs = DataBase.listJobs
@@ -23,7 +20,6 @@ struct CarouselOfJobs: View {
                 ZStack{
                     ForEach(0..<jobs.count, id: \.self) { index in
                         JobsView(job: jobs[index], isCurrentIndex: currentIndex == index, width: width, height: height)
-                            .opacity(currentIndex == index ? 1.0 : 1)
                             .scaleEffect(currentIndex == index ? 1 : 0.8)
                             .offset(x:CGFloat(index - currentIndex) * ((2 * width) + width/3.5) + dragOffSet, y: 0)
                     }

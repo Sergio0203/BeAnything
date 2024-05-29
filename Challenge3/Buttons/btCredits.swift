@@ -8,7 +8,7 @@ struct btCredits : View{
     var body: some View{
         HStack{
             NavigationLink{
-                CreditsView()
+                //CreditsView()
             } label: {
                 Image(.iconInte)
                     .resizable()
