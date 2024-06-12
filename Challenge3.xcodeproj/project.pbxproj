@@ -102,7 +102,6 @@
 			isa = PBXGroup;
 			children = (
 				72EBD38A2BFD274B008A959A /* CreditsView.swift */,
-				72EBD38E2BFD30D7008A959A /* AudioPlayerManager.swift */,
 				726179492C056EED00DE700C /* TutorialView.swift */,
 				7294F1B72C05751900707A13 /* AnimationsTutorial.swift */,
 				7294F1B92C05792100707A13 /* AnimationsTutorial2.swift */,
@@ -120,6 +119,14 @@
 				EB7214652C04447100466936 /* BtNarrator.swift */,
 			);
 			path = Buttons;
+			sourceTree = "<group>";
+		};
+		EB4F0B5B2C18C5A700EE5EA5 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				72EBD38E2BFD30D7008A959A /* AudioPlayerManager.swift */,
+			);
+			path = Audio;
 			sourceTree = "<group>";
 		};
 		EB805DFB2BFE612300E4893D /* Fonts */ = {
@@ -171,6 +178,7 @@
 		EBE33A682BF2AA2E00419E88 /* Challenge3 */ = {
 			isa = PBXGroup;
 			children = (
+				EB4F0B5B2C18C5A700EE5EA5 /* Audio */,
 				EB805DFE2BFE614400E4893D /* Info.plist */,
 				EB805DFB2BFE612300E4893D /* Fonts */,
 				EB95FCF02BF4EFB400FBDFBF /* Jobs */,

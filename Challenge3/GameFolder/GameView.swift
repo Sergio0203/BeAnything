@@ -1,24 +1,12 @@
-//
-//  GameView.swift
-//  Challenge3
-//
-//  Created by Sérgio César Lira Júnior on 15/05/24.
-//
-
 import SwiftUI
 
-
 struct GameView: View {
-//    static let fontRegular: String = "SF Pro Rounded Regular"
-//    static let fontBold: String = "SF Pro Rounded Bold"
+
     static let fontBold: String = "SF Pro Rounded Black"
     static let fontRegular: String = "SF Pro Rounded Medium"
-    let jobs = DataBase.listJobs.shuffled()
+    let jobs = DataBase.listJobs
     @State private var currentIndex = 0
     @State var dragOffSet: CGFloat = 0
-    @State private var dragAmount = CGSize.zero
-    @State var viewOpacity: Double = 1
-    @State var distanceFromMid: CGSize = CGSize(width: 0, height: 0)
     
     var backgroungImage : Image = Image(.backgroundAmarelo).resizable()
     @State var viewMenu : Bool = false
@@ -33,8 +21,6 @@ struct GameView: View {
                         
                         Spacer()
                         btMusic()
-                       // btSound()
-//                        btCredits()
                         
                         //BOTAO SOBRE
                         Button(action: {

@@ -5,8 +5,8 @@ struct btMusic : View{
     
     @State var isPlayingMusic = true
     var image : [ImageResource] = [.musicon, .musicoff]
-    
-    
+    private let themeSong = "themeSong"
+    private let type = "mp3"
     var body: some View{
         HStack{
             Button(action: isPlayingMusic ? stopBtMusic : playBtMusic, label: {
@@ -17,23 +17,17 @@ struct btMusic : View{
             })
         }.padding(5)
             .onAppear(perform: {
-                AudioManager.shared.startAudio(sound: "themeSong", type: "mp3")
+                AudioManager.shared.startAudio(sound: themeSong, type: type)
             })
     }
     
     func playBtMusic(){
         isPlayingMusic = true
-        AudioManager.shared.setIsButtonActivated(isButtonActivated: true)
-        if !AudioManager.shared.getIsNarrating(){
-            AudioManager.shared.startAudio(sound: "themeSong", type: "mp3")
-        }
+        //AudioManager.shared.setIsButtonActivated(isButtonActivated: true)
     }
     
     func stopBtMusic(){
         isPlayingMusic = false
-        AudioManager.shared.setIsButtonActivated(isButtonActivated: false)
-        if !AudioManager.shared.getIsNarrating(){
-            AudioManager.shared.pause()
-        }
+        //AudioManager.shared.setIsButtonActivated(isButtonActivated: false)
     }
 }

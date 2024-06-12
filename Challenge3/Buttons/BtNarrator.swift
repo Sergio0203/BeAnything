@@ -10,18 +10,23 @@ import SwiftUI
 
 struct BtNarrator : View{
     var audioJob: String
+    @State var isPlaying = false
     var body: some View{
         HStack{
             Button(action: actionNarrator, label: {
-                Image(.soundon)
+                Image(!isPlaying ? .soundon : .soundoff)
             })
             
         }
     }
     
     func actionNarrator(){
-        AudioManager.shared.activateNarrating()
-        AudioManager.shared.startAudio(sound: audioJob, type: "mp3")
+        if !isPlaying{
+            AudioManager.shared.startAudio(sound: audioJob, type: "mp3")
+        }else{
+            AudioManager.shared.pauseAudio()
+        }
+        isPlaying = !isPlaying
     }
 }
 

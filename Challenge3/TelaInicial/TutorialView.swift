@@ -37,16 +37,16 @@ struct TutorialView: View {
                 .fill(.cardsColorStroke)
                 .strokeBorder(.cardsColorStroke, lineWidth: 10)
                 .frame(width: w * 0.9 , height: h * 0.75)
-                .overlay{
-                    Button(action: {
-                        isToggledTutorial.toggle()
-                    }, label: {
-                        Image("sair")
-                            .resizable()
-                            .frame(width: w * 0.04, height: h * 0.05)
-                    })
-                        .border(.red)
-                }
+//                .overlay{
+//                    Button(action: {
+//                        isToggledTutorial.toggle()
+//                    }, label: {
+//                        Image("sair")
+//                            .resizable()
+//                            .frame(width: w * 0.04, height: h * 0.05)
+//                    })
+//                        .border(.red)
+//                }
             
             TabView(selection: $currentPage){
 

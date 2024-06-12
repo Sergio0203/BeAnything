@@ -7,7 +7,7 @@ struct CreditsView: View {
     var w: CGFloat
     var h: CGFloat
     var title = "O que é o  Dream Gap?"
-    var text = "O Dream Gap ou Lacuna dos Sonhos começa por volta dos 6 anos quando as meninas começam a desenvolver crenças autolimitantes e pensam que não são tão inteligentes e capazes quanto os meninos. Elas param de acreditar que seu devido a seu gênero podem ser qualquer profissão que quiserem. Desejamos inspirar o potencial ilimitado das meninas, através da encenação, para que elas possam se inspirar e se imaginar em diferentes profissões e papéis. Devemos fornecer às meninas representatividade e estímulo ao seu potencial criativo para diminuir a Lacuna dos Sonhos."
+    var text = "O Dream Gap ou Lacuna dos Sonhos começa por volta dos 6 anos quando as meninas começam a desenvolver crenças autolimitantes e pensam que não são tão inteligentes e capazes quanto os meninos. Elas param de acreditar que devido a seu gênero podem ser qualquer profissão que quiserem. Desejamos inspirar o potencial ilimitado das meninas, através da encenação, para que elas possam se inspirar e se imaginar em diferentes profissões e papéis. Devemos fornecer às meninas representatividade e estímulo ao seu potencial criativo para diminuir a Lacuna dos Sonhos."
     
     @Binding var isToggledSobre: Bool
 
