@@ -10,6 +10,7 @@ import SwiftUI
 
 
 struct DataBase {
+    #warning("Esta variável poderia estar dentro do próprio JobsModel ou até um extension!")
     static var listJobs: [JobsModel] = [
         JobsModel(image: Image(.presidenta), story: "Olá, presidente! Hoje é seu primeiro dia. Você está pronta para ajudar e resolver os problemas do país?\n\nSenhora Presidente, os alunos de várias escolas estão sem livros. O que você gostaria de fazer para garantir que todos tenham os livros de que precisam?", name: "A Presidente", description: ["A presidente é chefe de um país", "Ela ajuda as pessoas do país", "Ela fala em nome do país em eventos importantes"], audioName: "presidentAudio"),
         JobsModel(image: Image( .cientista), story: "Olá, cientista! Hoje é um dia muito emocionante no laboratório. Estamos tentando descobrir uma cura para uma doença.\n\nRecebemos algo que poderá nos ajudar, mas não sabemos o que é. Como você vai investigar e descobrir o que é?", name: "A Cientista", description: ["Faz pesquisas e experimentos", "Descobre coisas novas", "Resolve probelmas importantes"], audioName: "scientistAudio"),
@@ -27,6 +28,8 @@ struct JobsModel{
     let name: String
     let description: [String]
     let audioName: String
+    #warning("Esse construtor é redundante por conta do memberwise initilization das Structs")
+    #warning("Este param image, por que é um optional forced?")
     init(image: Image!, story: String, name: String, description: [String], audioName: String) {
         self.image = image
         self.story = story

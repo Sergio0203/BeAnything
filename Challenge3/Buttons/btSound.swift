@@ -1,15 +1,16 @@
 import Foundation
 import SwiftUI
-
-//vou modificar quanto tivermos todos os efeitos sonoros
+#warning("Poderia usar o marcado //TODO:")
+//MARK: vou modificar quanto tivermos todos os efeitos sonoros
 //acredito que vou ter que armazenar eles em um array - para poder desativar todos ao mesmo tempo
-
+#warning("Remover arquivos que não serão usados!")
 struct btSound : View{
     @State var isPlayingSounds = true
     var image : [ImageResource] = [.iconSound, .iconSoundOff]
     
     var body: some View{
         HStack{
+            #warning("Poderia o usar o toggle!")
             Button(action: isPlayingSounds ? stopbtSounds : playbtSounds, label: {
                 Image(isPlayingSounds ? image[0] : image[1])
                     .resizable()

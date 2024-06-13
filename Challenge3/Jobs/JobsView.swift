@@ -10,6 +10,7 @@ import SwiftUI
 
 struct JobsView: View {
     let job: JobsModel
+    #warning("Os nomes de variáveis devem representar de forma clara o seu significado!")
     @State var backDegree: Double = 0.01
     @State var frontDegree: Double = -90
     @State var isFlipped = false
@@ -25,7 +26,9 @@ struct JobsView: View {
     
     
     func flipCard () {
+        #warning("Poderia usar o método .toogle()")
         isFlipped = !isFlipped
+        #warning("Poderia usar o gaurd para o isCurrentIndex uma vez que não faz nada se não for o currentIndex!")
         if isFlipped && isCurrentIndex{
             withAnimation(.linear(duration: durationAndDelay)) {
                 backDegree = 90
@@ -51,6 +54,7 @@ struct JobsView: View {
             .onTapGesture {
                 flipCard()
             }
+            #warning("Poderia apenas passar o tipo model por param")
             StoryView(story: job.story, name: job.name, audio: job.audioName, width: width, height: height)
         }
     }
@@ -70,6 +74,7 @@ struct CardBack : View {
                 .strokeBorder(.cardsColorStroke, lineWidth: 10)
                 .frame(width: width, height: height)
             VStack(){
+                #warning("Podemos usar o @ScaledMetric par acompanhar as mudanças de dynamic type!")
                 Text("O que ela faz?")
                     .font(.custom(GameView.fontBold, size: 40, relativeTo: .largeTitle))
                     .foregroundStyle(.white)
@@ -78,6 +83,8 @@ struct CardBack : View {
                     
                 
                 ForEach(0..<jobDescription.count, id: \.self) { index in
+                    #warning("Poderia usar String interpolation!")
+//                    Text("• \(jobDescription[index]);")
                         Text("• "+jobDescription[index] + ";")
                             .multilineTextAlignment(.leading)
                             .font(.custom(

@@ -29,7 +29,7 @@ struct CarouselOfJobs: View {
         
     }
 }
-
+#warning("Remover comentários desnecessários!")
 //#Preview {
 //    CarouselOfJobs(currentIndex: 0, dragOffSet: 0.0, width: 100, height: 200)
 //}

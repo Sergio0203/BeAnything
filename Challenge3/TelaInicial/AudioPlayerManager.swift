@@ -18,7 +18,7 @@ final class AudioManager {
                 options: []
             )
         } catch _ {}
-        
+        #warning("Ignorar o erro não é trata-lo!")
         do {
             try session.setActive(true, options: .notifyOthersOnDeactivation)
         } catch _ {}

@@ -9,6 +9,7 @@ import SwiftUI
 
 
 struct GameView: View {
+    #warning("Remover comentários desnecessários!")
 //    static let fontRegular: String = "SF Pro Rounded Regular"
 //    static let fontBold: String = "SF Pro Rounded Bold"
     static let fontBold: String = "SF Pro Rounded Black"
@@ -19,7 +20,8 @@ struct GameView: View {
     @State private var dragAmount = CGSize.zero
     @State var viewOpacity: Double = 1
     @State var distanceFromMid: CGSize = CGSize(width: 0, height: 0)
-    
+
+    #warning("mix português com inglês")
     var backgroungImage : Image = Image(.backgroundAmarelo).resizable()
     @State var viewMenu : Bool = false
     
@@ -48,7 +50,7 @@ struct GameView: View {
                     }.padding()
                     
                     Spacer()
-                    
+                    #warning("Interessante separar os números fixos de config em um arquvio separado!")
                     CarouselOfJobs(currentIndex: currentIndex, dragOffSet: dragOffSet, width: screen.size.width * 0.35, height:screen.size.height * 0.6).frame(alignment: .center)
                     Spacer()
                 }

@@ -1,6 +1,6 @@
 import Foundation
 import SwiftUI
-
+#warning("Tipos devem seguir a convenção PascalCase")
 struct btMusic : View{
     
     @State var isPlayingMusic = true

@@ -16,7 +16,7 @@ struct MenuView: View {
     @State var viewTutorial : Bool = false
     @State var viewSobre : Bool = false
     @State private var currentIndex = 0
-    
+    #warning("Identação: tip (ctrl + i)")
      @Binding var isToggled: Bool
     
     var body: some View {

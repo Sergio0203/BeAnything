@@ -10,6 +10,7 @@ import SwiftUI
 
 struct AnimationsTutorial2: View {
     
+    #warning("Como utilizam essas variaveis, poderiam encapsular em um tipo!")
     @State var backDegree: Double = 0.01
     @State var frontDegree: Double = -90
     @State var isFlipped = false
@@ -20,6 +21,7 @@ struct AnimationsTutorial2: View {
     var w: CGFloat
     var h: CGFloat
     
+    #warning("func is não usada!")
     func setFlip(){
         isFlipped = false
     }
